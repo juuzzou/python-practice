@@ -41,7 +41,7 @@ def show_employee(name, salary=9000):
     return print(f'Name: {name}\nSalary: {salary}')
 
 show_employee('Wyatt', 6000)
-show_employee('Alfajer')
+show_employee('Jon Snow')
 
 """
     Exercise 5: Create an inner function
@@ -120,10 +120,19 @@ def describePet(animal_type, pet_name):
 
 describePet(animal_type='Dog', pet_name='Pibble')
 
+"""
+    Exercise 11: Create a function with keyword arguments
+    The exercise requires you to create a function that can accept any number of keyword arguments. 
+    A keyword argument is where you specify the name of the argument along with its value (e.g., name="Alice", age=30). 
+    Inside the function, you need to access these arguments and print them in a key-value format.
+    Create a function print_info(**kwargs) that accepts keyword arguments and prints the key-value pairs. Call it with different keyword arguments
+"""
 
-
-
-
-
-
-
+def printInfo(**kwargs):
+    if kwargs:
+        for key, value in kwargs.items():
+            print(f'{key}: {value}')
+    else:
+        return None
+printInfo(name='Wyatt', age=22)
+printInfo(position='Data Engineer', salary='8000')
