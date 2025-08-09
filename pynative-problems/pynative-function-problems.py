@@ -70,3 +70,42 @@ def addition(value):
         return value
     return value + addition(value - 1)
 print(addition(10))
+
+"""
+    Exercise 7: Assign a different name to function and call it through the new name
+    Below is the function display_student(name, age). 
+    Assign a new name show_student(name, age) to it and call it using the new name.
+"""
+def display_student(name, age):
+    print(name, age)
+
+display_student("Emma", 26)
+show_students = display_student
+show_students('Wyatt', 22)
+
+"""
+    Exercise 8: Generate a Python list of all the even numbers between 4 to 30
+"""
+
+def generateEvenNumbers():
+    _array = []
+    for element in range(4, 30, 2):
+        _array.append(element)
+    return _array
+
+print(generateEvenNumbers())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
