@@ -95,12 +95,30 @@ def generateEvenNumbers():
 
 print(generateEvenNumbers())
 
+"""
+    Exercise 9: Find the largest item from list
+"""
 
+def findLargest(array):
+    _largest = 0
+    for element in array:
+        if element > _largest:
+            _largest = element
+    return print(_largest)
 
+x = [4, 6, 8, 24, 12, 2]
+findLargest(x)
 
+"""
+    Exercise 10: Call Function using both positional and keyword arguments
+    Define a function describe_pet(animal_type, pet_name) that prints a description of a pet. 
+    Call this function using both positional and keyword arguments.
+"""
 
+def describePet(animal_type, pet_name):
+    return print(f'Animal type: {animal_type}\nPet name: {pet_name}')
 
-
+describePet(animal_type='Dog', pet_name='Pibble')
 
 
 
