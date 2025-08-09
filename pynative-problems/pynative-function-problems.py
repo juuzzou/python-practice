@@ -38,7 +38,8 @@ print(*result)
 """
 
 def show_employee(name, salary=9000):
-    return print(f'Name: {name} \n Salary: {salary}')
+    return print(f'Name: {name}\nSalary: {salary}')
 
 show_employee('Wyatt', 6000)
 show_employee('Alfajer')
+
