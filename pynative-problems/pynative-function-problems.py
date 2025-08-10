@@ -136,3 +136,41 @@ def printInfo(**kwargs):
         return None
 printInfo(name='Wyatt', age=22)
 printInfo(position='Data Engineer', salary='8000')
+
+"""
+    Exercise 12: Modifies global variable
+    Define a global variable global_var = 10. Write a function that modifies a global variable value.
+"""
+
+test_variable = 10
+
+def changeValue():
+    global test_variable
+    test_variable = 20
+    print(test_variable)
+
+print(test_variable)
+changeValue()
+
+"""
+    Exercise 13: Write a recursive function to calculate the factorial
+    Write a recursive function to calculate the factorial of a non-negative integer.
+"""
+
+def factorial(n):
+    if n < 2:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(4))
+
+"""
+    Exercise 14: Create a lambda function that squares a given number lambda function in Python is a small anonymous function defined using the lambda keyword. 
+    The syntax is lambda arguments: expression. The expression is evaluated and returned.
+"""
+
+square = lambda x : x ** 2
+n = 4
+number = square(n)
+print(f'The square of {n} is {number}!')
