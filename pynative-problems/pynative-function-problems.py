@@ -174,3 +174,19 @@ square = lambda x : x ** 2
 n = 4
 number = square(n)
 print(f'The square of {n} is {number}!')
+
+"""
+    Exercise 15: Use a lambda with the filter() function to get all even numbers from a list
+"""
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+evenNumbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(evenNumbers)
+
+"""
+    Exercise 16: Use a lambda with the map() function to double each element in a list
+"""
+
+numbers = [1, 2, 3, 4, 5]
+doubleNumbers = list(map(lambda x : x * 2, numbers))
+print(doubleNumbers)
