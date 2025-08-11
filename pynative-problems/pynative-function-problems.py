@@ -190,3 +190,32 @@ print(evenNumbers)
 numbers = [1, 2, 3, 4, 5]
 doubleNumbers = list(map(lambda x : x * 2, numbers))
 print(doubleNumbers)
+
+"""
+    Exercise 17: Use a lambda with the sorted() function to sort a list of tuples based on the second element
+"""
+
+data = [('apple', 5), ('banana', 2), ('cherry', 8), ('date', 1)]
+sort = list(sorted(data, key=lambda key: key[1]))
+print(sort)
+
+"""
+    Exercise 18: Create Higher-Order Function
+    Write a function apply_operation(func, x, y) that takes a function func and two numbers x and y as arguments, and returns the result of calling func(x, y). 
+    Demonstrate its use with different functions (e.g., addition, subtraction).
+    The exercise requires you to create a higher-order function, which is a function that can take other functions as arguments. 
+"""
+
+def applyOpperation(func, x, y):
+    return func(x, y)
+
+def addition(a, b):
+    return a + b
+
+def substraction(a, b):
+    return a - b
+
+resultAddition = applyOpperation(addition, 2, 3)
+print(resultAddition)
+resultSubstruction = applyOpperation(substraction, 7, 3)
+print(resultSubstruction)
