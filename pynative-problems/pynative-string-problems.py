@@ -16,7 +16,7 @@ def createNewStringMiddleChars(string):
     new_string = string[floor(len(string)/2) - 1] + string[floor(len(string)/2)] + string[floor(len(string)/2) + 1]
     return print(new_string)
 
-def main():
+def start():
     problem = input("Choose the problem (A, B): ")
     if problem == 'A':
         user_input = str(input("Enter your string: "))
@@ -25,4 +25,13 @@ def main():
         user_input = str(input("Enter your string: "))
         createNewStringMiddleChars(user_input)
 
-main()
+"""
+    Exercise 2: Append new string in the middle of a given string
+    Given two strings, s1 and s2. Write a program to create a new string s3 by appending s2 in the middle of s1.
+"""
+
+def insertString(string_a, string_b):
+    new_string = string_a[0:floor(len(string_a)/2)] + string_b + string_a[floor(len(string_a)/2):floor(len(string_a))]
+    return print(new_string)
+
+insertString("Ault", "Kelly")
