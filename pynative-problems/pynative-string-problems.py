@@ -134,3 +134,19 @@ def countSubstringOccurrences(string, substring):
 
 text = "Welcome to USA. usa awesome, isn't it?"
 countSubstringOccurrences(text, 'usa')
+
+"""
+    Exercise 9: Calculate the sum and average of the digits present in a string
+    Given a string s1, write a program to return the sum and average of the digits that appear in the string, ignoring all other characters. 
+"""
+
+def calculateSumAndAvgInString(string):
+    _temp_list = []
+    for character in string:
+        if character in digits:
+            _temp_list.append(int(character))
+        else:
+            continue
+    return print(f'SUM: {sum(_temp_list)}, AVG: {sum(_temp_list)/len(_temp_list):.2f} ')
+
+calculateSumAndAvgInString("PYnative29@#8496")
