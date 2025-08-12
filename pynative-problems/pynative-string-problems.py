@@ -123,3 +123,14 @@ def isInString(string_a, string_b):
 test_result_1 = isInString("Yn","PYnative")
 test_result_2 = isInString("Ynf","PYnative")
 print(test_result_1, test_result_2)
+
+"""
+    Exercise 8: Find all occurrences of a substring in a given string by ignoring the case
+    Write a program to find all occurrences of “USA” in a given string ignoring the case. 
+"""
+
+def countSubstringOccurrences(string, substring):
+    return print(string.upper().count(substring.upper()))
+
+text = "Welcome to USA. usa awesome, isn't it?"
+countSubstringOccurrences(text, 'usa')
