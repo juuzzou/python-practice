@@ -1,5 +1,5 @@
 from math import floor
-from string import ascii_lowercase, ascii_uppercase
+from string import ascii_lowercase, ascii_uppercase, ascii_letters, digits
 """
     Exercise 1A: Create a string made of the first, middle and last character
     Write a program to create a new string made of an input string’s first, middle, and last character.
@@ -70,3 +70,39 @@ def arrangeString(input_string):
     return print(new_string)
 
 arrangeString("PyNaTive")
+
+"""
+    Exercise 5: Count all letters, digits, and special symbols from a given string
+"""
+
+def countDiffChars(input_string):
+    chars_count = 0
+    digit_count = 0
+    symbol_count = 0
+    for char in input_string:
+        if char in ascii_letters:
+            chars_count += 1
+        elif char in digits:
+            digit_count += 1
+        else:
+            symbol_count += 1
+
+    return print(f'Total count of chars - {chars_count}, digits - {digit_count}, symbols - {symbol_count}')
+
+countDiffChars("P@#yn26at^&i5ve")
+
+"""
+    Exercise 6: Create a mixed String using the following rules
+    Given two strings, s1 and s2. Write a program to create a new string s3 made of the first char of s1, then the last char of s2, 
+    Next, the second char of s1 and second last char of s2, and so on. Any leftover chars go at the end of the result.
+"""
+
+def createMixString(string_a, string_b):
+    new_string = ""
+    string_b = string_b[::-1]
+    for i in range(max(len(string_a), len(string_b))):
+        new_string += string_a[i]
+        new_string += string_b[i]
+    return print(new_string)
+
+createMixString("Abc", "Xyz")
