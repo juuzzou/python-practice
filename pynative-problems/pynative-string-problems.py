@@ -106,3 +106,20 @@ def createMixString(string_a, string_b):
     return print(new_string)
 
 createMixString("Abc", "Xyz")
+
+"""
+    Exercise 7: String characters balance Test
+    Write a program to check if two strings are balanced. 
+    For example, strings s1 and s2 are balanced if all the characters in the s1 are present in s2. 
+    The character’s position doesn’t matter.
+"""
+
+def isInString(string_a, string_b):
+    if string_a in string_b:
+        return True
+    else:
+        return False
+
+test_result_1 = isInString("Yn","PYnative")
+test_result_2 = isInString("Ynf","PYnative")
+print(test_result_1, test_result_2)
