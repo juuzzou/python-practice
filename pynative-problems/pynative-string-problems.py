@@ -1,5 +1,5 @@
 from math import floor
-from string import ascii_lowercase, ascii_uppercase, ascii_letters, digits
+from string import ascii_lowercase, ascii_uppercase, ascii_letters, digits, punctuation
 
 """
     Exercise 1A: Create a string made of the first, middle and last character
@@ -183,3 +183,57 @@ def findLastPosition(string, substring):
 
 test_text = "Emma is a data scientist who knows Python. Emma works at google."
 findLastPosition(test_text, 'Emma')
+
+"""
+    Exercise 13: Split a string on hyphens
+    Write a program to split a given string on hyphens and display each substring.
+"""
+
+def splitBy(string):
+    string = string.split(sep='-')
+    for word in string:
+        print(word)
+splitBy("Emma-is-a-data-scientist")
+
+"""
+    Exercise 14: Remove empty strings from a list of strings
+"""
+def removeEmptyString(list):
+    for element in list:
+        if element is None or element == "":
+            list.remove(element)
+        else:
+            continue
+    return print(list)
+
+str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+removeEmptyString(str_list)
+
+"""
+    Exercise 15: Remove special symbols / punctuation from a string
+"""
+
+""""
+    Shit code
+"""
+
+def removeSymbols(string):
+    new_string = ''
+    for letter in string:
+        if letter in punctuation:
+            continue
+        else:
+            new_string += letter
+
+    new_string = new_string.split(' ')
+
+    for word in new_string:
+        if word == '':
+            new_string.remove(word)
+        else:
+            continue
+
+    temp = ' '.join(map(str, new_string))
+    return temp
+
+print(removeSymbols("/*Jon is @developer & musician"))
