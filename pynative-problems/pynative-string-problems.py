@@ -1,5 +1,6 @@
 from math import floor
 from string import ascii_lowercase, ascii_uppercase, ascii_letters, digits
+
 """
     Exercise 1A: Create a string made of the first, middle and last character
     Write a program to create a new string made of an input string’s first, middle, and last character.
@@ -150,3 +151,35 @@ def calculateSumAndAvgInString(string):
     return print(f'SUM: {sum(_temp_list)}, AVG: {sum(_temp_list)/len(_temp_list):.2f} ')
 
 calculateSumAndAvgInString("PYnative29@#8496")
+
+"""
+    Exercise 10: Write a program to count occurrences of all characters within a string
+"""
+
+def countAllChars(string):
+    counter ={}
+    for character in string:
+        count = string.count(character)
+        counter[character] = count
+    return print(counter)
+
+countAllChars("Apple")
+
+"""
+    Exercise 11: Reverse a given string
+"""
+
+def reverserString(string):
+    return print(string[::-1])
+
+reverserString("PYnative")
+
+"""
+    Exercise 12: Find the last position of a given substring
+    Write a program to find the last position of a substring “Emma” in a given string.
+"""
+def findLastPosition(string, substring):
+    return print(f'Last occurrence of Emma starts at index {string.rfind(substring)}')
+
+test_text = "Emma is a data scientist who knows Python. Emma works at google."
+findLastPosition(test_text, 'Emma')
