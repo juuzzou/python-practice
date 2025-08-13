@@ -237,3 +237,46 @@ def removeSymbols(string):
     return temp
 
 print(removeSymbols("/*Jon is @developer & musician"))
+
+"""
+    Exercise 16: Removal all characters from a string except integers
+"""
+def removeExceptInt(string):
+    result = ""
+    for item in string:
+        if item.isdigit():
+            result += item
+    return result
+
+print(removeExceptInt('I am 25 years and 10 months old'))
+
+"""
+    Exercise 17: Find words with both alphabets and numbers
+    Write a program to find words with both alphabets and numbers from an input string.
+"""
+
+def printWhereAlphaNum(string):
+    list_ = string.split(" ")
+    yet_another_list = []
+    for item in list_:
+        if any(char in ascii_letters for char in item) and any(char in digits for char in item):
+            yet_another_list.append(item)
+        else:
+            continue
+    return yet_another_list
+
+str1 = "Emma25 is Data scientist50 and AI Expert"
+print(printWhereAlphaNum(str1))
+
+"""
+    Exercise 18: Replace each special symbol with # in the following string
+"""
+def replaceSymbolWithHash(string):
+    for char in string:
+        if char in punctuation:
+            string = string.replace(char, "#")
+        else:
+            continue
+    return string
+str1 = '/*Jon is @developer & musician!!'
+print(replaceSymbolWithHash(str1))
