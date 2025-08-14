@@ -15,3 +15,17 @@ l1 = [3, 6, 9, 12, 15, 18, 21]
 l2 = [4, 8, 12, 16, 20, 24, 28]
 
 print(createListOfTwo(l1, l2))
+
+"""
+    Exercise 2: Remove and add item in a list
+    Write a program to remove the item present at index 4 and add it to the 2nd position and at the end of the list.
+"""
+
+def anotherFunction(list, new_element):
+    list.pop(4)
+    list.insert(2, new_element)
+    list.append(new_element)
+    return list
+list1 = [54, 44, 27, 79, 91, 41]
+print(f'List before manipulations: {list1}')
+print(f'List after manipulations: {anotherFunction(list1, 5)}')
