@@ -29,3 +29,18 @@ def anotherFunction(list, new_element):
 list1 = [54, 44, 27, 79, 91, 41]
 print(f'List before manipulations: {list1}')
 print(f'List after manipulations: {anotherFunction(list1, 5)}')
+
+"""
+    Exercise 3: Slice list into 3 equal chunks and reverse each chunk
+"""
+def sliceList(list):
+    list_1, list_2, list_3 = [], [], []
+    _temp = len(list)
+    for item_1, item_2, item_3 in zip(range(0, 3), range(3, 6), range(6, 9)):
+        list_1.append(list[item_1])
+        list_2.append(list[item_2])
+        list_3.append(list[item_3])
+    print(f'List 1: {list_1[::-1]}\nList 2: {list_2[::-1]}\nList 3: {list_3[::-1]}')
+
+sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
+sliceList(sample_list)
