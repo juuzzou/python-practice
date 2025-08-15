@@ -60,6 +60,7 @@ sliceList(sample_list)
     Write a program to iterate a given list and count the occurrence of each element and create a dictionary to show the count of each element.
 """
 
+
 def countItems(list):
     count_dict = {}
     for item in list:
@@ -67,6 +68,19 @@ def countItems(list):
         count_dict.update({item: counter})
     return count_dict
 
+
 sample_list = [11, 45, 8, 11, 23, 45, 23, 45, 89]
 test = countItems(sample_list)
 print(test)
+
+"""
+    Exercise 5: Paired Elements from Two Lists as a Set
+    Write a code to create a Python set such that it shows the element from both lists in a pair.
+"""
+def pairElement(list_1, list_2):
+    result = zip(list_1, list_2)
+    return set(result)
+
+first_list = [2, 3, 4, 5, 6, 7, 8]
+second_list = [4, 9, 16, 25, 36, 49, 64]
+print(pairElement(first_list, second_list))
