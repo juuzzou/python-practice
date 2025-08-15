@@ -54,3 +54,19 @@ def sliceList(list):
 
 sample_list = [11, 45, 8, 23, 14, 12, 78, 45, 89]
 sliceList(sample_list)
+
+"""
+    Exercise 4: Count the occurrence of each element from a list
+    Write a program to iterate a given list and count the occurrence of each element and create a dictionary to show the count of each element.
+"""
+
+def countItems(list):
+    count_dict = {}
+    for item in list:
+        counter = list.count(item)
+        count_dict.update({item: counter})
+    return count_dict
+
+sample_list = [11, 45, 8, 11, 23, 45, 23, 45, 89]
+test = countItems(sample_list)
+print(test)
