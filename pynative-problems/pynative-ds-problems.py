@@ -105,3 +105,28 @@ first_set = {23, 42, 65, 57, 78, 83, 29}
 second_set = {57, 83, 29, 67, 73, 43, 48}
 
 yetAnotherFunction(first_set, second_set)
+
+"""
+    Exercise 7: Subset or Superset of another set
+    Write a code to checks if one set is a subset or superset of another set. If found, delete all elements from that set.
+"""
+
+
+def andAnotherFunction(set_1, set_2):
+    print(f'First set is subset of second set - {set_1.issubset(set_2)}')
+    print(f'Second set is subset of First set - {set_2.issubset(set_1)}')
+    print(f'First set is Super set of second set - {set_1.issuperset(set_2)}')
+    print(f'Second set is Super set of First set - {set_2.issuperset(set_1)}')
+
+    if set_1.issubset(set_2):
+        set_1.clear()
+
+    if set_2.issubset(set_1):
+        set_2.clear()
+
+    print(set_1, set_2)
+
+
+first_set = {27, 43, 34}
+second_set = {34, 93, 22, 27, 43, 53, 48}
+andAnotherFunction(first_set, second_set)
