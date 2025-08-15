@@ -77,10 +77,31 @@ print(test)
     Exercise 5: Paired Elements from Two Lists as a Set
     Write a code to create a Python set such that it shows the element from both lists in a pair.
 """
+
+
 def pairElement(list_1, list_2):
     result = zip(list_1, list_2)
     return set(result)
 
+
 first_list = [2, 3, 4, 5, 6, 7, 8]
 second_list = [4, 9, 16, 25, 36, 49, 64]
 print(pairElement(first_list, second_list))
+
+"""
+    Exercise 6: Set Intersection and Removal
+    Write a code to find the intersection (common) of two sets and remove those elements from the first set.
+"""
+
+
+def yetAnotherFunction(set_1, set_2):
+    intersect = set_1.intersection(set_2)
+    for item in intersect:
+        set_1.remove(item)
+    print(f'Intersection is {intersect}\nFirst Set after removing common element: {set_1}')
+
+
+first_set = {23, 42, 65, 57, 78, 83, 29}
+second_set = {57, 83, 29, 67, 73, 43, 48}
+
+yetAnotherFunction(first_set, second_set)
