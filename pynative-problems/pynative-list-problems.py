@@ -267,3 +267,16 @@ def yetAnotherNotNamedFunction(list_1, list_2):
 list1 = ["M", "na", "i", "Ke"]
 list2 = ["y", "me", "s", "lly"]
 print(yetAnotherNotNamedFunction(list1, list2))
+
+"""
+    Exercise 18: Concatenate two lists in the following order
+"""
+
+
+def concatenate(list_1, list_2):
+    return [item + j_item for item in list_1 for j_item in list_2]
+
+
+list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
+print(concatenate(list1, list2))
