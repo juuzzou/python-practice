@@ -130,3 +130,23 @@ def andAnotherFunction(set_1, set_2):
 first_set = {27, 43, 34}
 second_set = {34, 93, 22, 27, 43, 53, 48}
 andAnotherFunction(first_set, second_set)
+
+"""
+    Exercise 8: Filter List Against Dictionary Values
+    Write a program to iterate a given list and check if a given element exists as a key’s value in a dictionary. If not, delete it from the list
+"""
+
+
+def removeUnwanted(list, dictionary):
+    new_list = []
+    for item in list:
+        if item in dictionary.values():
+            new_list.append(item)
+        else:
+            continue
+    print(f'After removing unwanted elements from list {new_list}')
+
+
+roll_number = [47, 64, 69, 37, 76, 83, 95, 97]
+sample_dict = {'Jhon': 47, 'Emma': 69, 'Kelly': 76, 'Jason': 97}
+removeUnwanted(roll_number, sample_dict)
