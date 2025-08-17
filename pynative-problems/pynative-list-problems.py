@@ -236,3 +236,34 @@ def accessNestedList(list):
 
 nested_list = [[10, 20, 30], [44, 55, 66], [77, 87, 99]]
 print(accessNestedList(nested_list))
+
+"""
+   Exercise 16: Flatten Nested List
+    Write a function to flatten a list of lists into a single, non-nested list. (e.g., [[1, 2], [3, 4]] becomes [1, 2, 3, 4]). 
+"""
+
+
+def notNamedFunction(list):
+    return [i for item in list for i in item]
+
+
+list_of_lists = [[1, 2], [3, 4], [5, 6, 7]]
+print(notNamedFunction(list_of_lists))
+
+"""
+    Exercise 17: Concatenate two lists index-wise
+    Write a program to add two lists index-wise. Create a new list that contains the 0th index item from both the list, then the 1st index item, 
+    and so on till the last element. any leftover items will get added at the end of the new list. 
+"""
+
+
+def yetAnotherNotNamedFunction(list_1, list_2):
+    new_list = []
+    for item, item_2 in zip(list_1, list_2):
+        new_list.append(item + item_2)
+    return new_list
+
+
+list1 = ["M", "na", "i", "Ke"]
+list2 = ["y", "me", "s", "lly"]
+print(yetAnotherNotNamedFunction(list1, list2))
