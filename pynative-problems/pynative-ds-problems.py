@@ -151,4 +151,36 @@ roll_number = [47, 64, 69, 37, 76, 83, 95, 97]
 sample_dict = {'Jhon': 47, 'Emma': 69, 'Kelly': 76, 'Jason': 97}
 removeUnwanted(roll_number, sample_dict)
 
+"""
+    Exercise 9: Extract Unique Dictionary Values to List
+    Write a code to get all values from the dictionary and add them to a list but don’t add duplicates
+"""
 
+
+def extractUniqueValues(dictionary):
+    idk_how_to_name = []
+    for item in dictionary.values():
+        if item not in idk_how_to_name:
+            idk_how_to_name.append(item)
+        else:
+            continue
+    return idk_how_to_name
+
+
+speed = {'jan': 47, 'feb': 52, 'march': 47, 'April': 44, 'May': 52, 'June': 53, 'july': 54, 'Aug': 44, 'Sept': 54}
+print(extractUniqueValues(speed))
+
+"""
+    Exercise 10: remove duplicates from a list
+    Write a code to remove duplicates from a list and create a tuple and find the minimum and maximum number
+"""
+
+
+def removeDuplicates(list):
+    unique = set(list)
+    unique_tuple = tuple(unique)
+    print(f'Unique items are {unique}\nTuple: {unique_tuple}\nMin: {min(unique_tuple)}\nMax: {max(unique_tuple)}')
+
+
+sample_list = [87, 45, 41, 65, 94, 41, 99, 94]
+removeDuplicates(sample_list)
