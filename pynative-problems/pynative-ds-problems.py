@@ -131,7 +131,6 @@ first_set = {27, 43, 34}
 second_set = {34, 93, 22, 27, 43, 53, 48}
 andAnotherFunction(first_set, second_set)
 
-<<<<<<< HEAD
 """
     Exercise 8: Filter List Against Dictionary Values
     Write a program to iterate a given list and check if a given element exists as a key’s value in a dictionary. If not, delete it from the list
