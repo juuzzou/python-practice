@@ -211,3 +211,26 @@ def removeSpecificValue(list, value):
 
 list1 = [5, 20, 15, 20, 25, 50, 20]
 print(removeSpecificValue(list1, 20))
+
+
+"""
+    Exercise 14: List Comprehension for Numbers
+    Use list comprehension to create a new list containing only the numbers from a given list.
+"""
+
+def anotherFunction(list):
+    return [item for item in list if isinstance(item, (int, float))]
+
+my_list = [1, 2, 3, 'Jessa', 4, 5, 'Kelly', 'Jhon', 6]
+print(anotherFunction(my_list))
+
+
+"""
+    Exercise 15: Access Nested Lists
+"""
+
+def accessNestedList(list):
+    return list[1][1]
+
+nested_list = [[10, 20, 30], [44, 55, 66], [77, 87, 99]]
+print(accessNestedList(nested_list))
