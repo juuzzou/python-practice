@@ -114,5 +114,52 @@ countAllChars(string1)
 def accessNestedDict(dictionary):
     return dictionary['person']['age']
 
+
 data = {'person': {'name': 'Alice', 'age': 30}}
 print(f'Age: {accessNestedDict(data)}')
+
+"""
+    Exercise 8: Print the value of key ‘history’ from nested dict
+"""
+
+
+def notANamedFunc():
+    _sampleDict = {
+        "class": {
+            "student": {
+                "name": "Mike",
+                "marks": {
+                    "physics": 70,
+                    "history": 80
+                }
+            }
+        }
+    }
+    return _sampleDict['class']['student']['marks']['history']
+
+
+print(notANamedFunc())
+
+"""
+    Exercise 9: Modify Nested Dictionary
+    In the below dictionary, change name to ‘Jessa’.
+"""
+
+
+def notANamedFunc_2(name):
+    _sampleDict = {
+        "class": {
+            "student": {
+                "name": "Mike",
+                "marks": {
+                    "physics": 70,
+                    "history": 80
+                }
+            }
+        }
+    }
+    _sampleDict['class']['student'].update({'name': name})
+    return _sampleDict
+
+
+print(notANamedFunc_2("Jessa"))
