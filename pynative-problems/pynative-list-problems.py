@@ -280,3 +280,64 @@ def concatenate(list_1, list_2):
 list1 = ["Hello ", "take "]
 list2 = ["Dear", "Sir"]
 print(concatenate(list1, list2))
+
+"""
+    Exercise 19: Iterate both lists simultaneously
+    Given a two Python list. Write a program to iterate both lists simultaneously and display items from list1 in original order and items from list2 in reverse order.
+"""
+
+
+def reverserSecondList(list_1, list_2):
+    list_2 = list_2[::-1]
+    for i, j in zip(list_1, list_2):
+        print(i, j)
+
+
+list1 = [10, 20, 30, 40]
+list2 = [100, 200, 300, 400]
+reverserSecondList(list1, list2)
+
+"""
+    Exercise 21: Add new item to list after a specified item    
+    Write a program to add item 7000 after 6000 in the following Python List
+"""
+
+
+def addNewItemInSpecificPlace(list, item):
+    list[2][2].append(item)
+    return list
+
+
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+print(addNewItemInSpecificPlace(list1, 7000))
+
+"""
+    Exercise 22: Extend nested list by adding the sublist
+    You have given a nested list. Write a program to extend it by adding the sublist ["h", "i", "j"] in such a way that it will look like the following list.
+"""
+
+
+def extendListInSpecificPlace(list, sublist):
+    list[2][1][2].extend(sublist)
+    return list
+
+
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+sub_list = ["h", "i", "j"]
+print(extendListInSpecificPlace(list1, sub_list))
+
+"""
+    Exercise 23: Replace list’s item with new value if found
+    You have given a Python list. Write a program to find value 20 in the list, and if it is present, replace it with 200. 
+    Only update the first occurrence of an item.
+"""
+
+
+def replaceItem(list, old_value, new_value):
+    index = list.index(old_value)
+    list[index] = new_value
+    return list
+
+
+list1 = [5, 10, 15, 20, 25, 50, 20]
+print(replaceItem(list1, 20, 200))
