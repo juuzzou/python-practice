@@ -163,3 +163,19 @@ def notANamedFunc_2(name):
 
 
 print(notANamedFunc_2("Jessa"))
+
+"""
+    Exercise 10: Initialize dictionary with default values
+    In Python, we can initialize the keys with the same values.
+"""
+
+
+def initializeWithDefaultValues(list, dictionary):
+    new_dict = dict()
+    new_dict = new_dict.fromkeys(list, dictionary)
+    return new_dict
+
+
+employees = ['Kelly', 'Emma']
+defaults = {"designation": 'Developer', "salary": 8000}
+print(initializeWithDefaultValues(employees, defaults))
