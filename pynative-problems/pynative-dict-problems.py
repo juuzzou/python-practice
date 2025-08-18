@@ -259,4 +259,24 @@ sample_dict = {
 }
 print(renameKey(sample_dict, "city", "location"))
 
+"""
+    Exercise 15: Get the key of a minimum value
+    Write a code to print the key of a minimum value from the following dictionary.
+"""
 
+
+def findMin(dictionary):
+    return min(dictionary)
+
+
+sample_dict = {
+    'Physics': 82,
+    'Math': 65,
+    'history': 75
+}
+print(findMin(sample_dict))
+
+"""
+    Exercise 16: Change value of a key in a nested dictionary
+    Write a Python program to change Brad’s salary to 8500 in the following dictionary.
+"""
