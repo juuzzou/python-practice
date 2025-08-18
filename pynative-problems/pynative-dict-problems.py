@@ -87,3 +87,20 @@ def mergeDicts(first_dictionary, second_dictionary):
 dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
 dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
 print(mergeDicts(dict1, dict2))
+
+"""
+    Exercise 6: Count Character Frequencies
+    Given a string, create a dictionary where keys are characters and values are their frequencies in the string.
+"""
+
+
+def countAllChars(string):
+    counter = {}
+    for character in string:
+        count = string.count(character)
+        counter[character] = count
+    return print(counter)
+
+
+string1 = 'Jessa'
+countAllChars(string1)
