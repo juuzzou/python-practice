@@ -104,3 +104,15 @@ def countAllChars(string):
 
 string1 = 'Jessa'
 countAllChars(string1)
+
+"""
+    Exercise 7: Access Nested Dictionary
+    Given a nested dictionary {'person': {'name': 'Alice', 'age': 30}}, print Alice’s age.
+"""
+
+
+def accessNestedDict(dictionary):
+    return dictionary['person']['age']
+
+data = {'person': {'name': 'Alice', 'age': 30}}
+print(f'Age: {accessNestedDict(data)}')
