@@ -237,3 +237,26 @@ def checkIfExists(dictionary, value):
 
 sample_dict = {'a': 100, 'b': 200, 'c': 300}
 checkIfExists(sample_dict, 200)
+
+"""
+    Exercise 14: Rename key of a dictionary
+    Write a program to rename a key city to a location in the following dictionary.
+"""
+
+
+def renameKey(dictionary, key, new_key):
+    value = dictionary.get(key)
+    dictionary.pop(key)
+    dictionary.update({new_key: value})
+    return dictionary
+
+
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"
+}
+print(renameKey(sample_dict, "city", "location"))
+
+
