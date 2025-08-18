@@ -293,3 +293,66 @@ sample_dict = {
     'emp3': {'name': 'Brad', 'salary': 500}
 }
 print(stopIt(sample_dict))
+
+"""
+    Exercise 17: Invert Dictionary
+    Write a code to swap keys and values in a dictionary. Assume all values are unique
+"""
+
+
+def invertDictionary(dictionary):
+    inverted_dictionary = {}
+    for key, value in dictionary.items():
+        inverted_dictionary[value] = key
+    return inverted_dictionary
+
+
+original_dict1 = {'a': 1, 'b': 2, 'c': 3}
+print(invertDictionary(original_dict1))
+
+"""
+    Exercise 18: Sort Dictionary by Keys
+    Sort a dictionary by its keys and print the sorted dictionary (as an OrderedDict or by converting to a list of tuples).
+"""
+
+
+def sortByKeys(dictionary):
+    sorted_dictionary = sorted(dictionary.items())
+    return sorted_dictionary
+
+
+my_dict = {'apple': 3, 'zebra': 1, 'banana': 2, 'cat': 4}
+print(sortByKeys(my_dict))
+
+"""
+    Exercise 19: Sort Dictionary by Values
+    Sort a dictionary by its values and print the sorted dictionary (as an OrderedDict or by converting to a list of tuples).
+"""
+
+
+def sortByValue(dictionary):
+    return {key: value for key, value in sorted(dictionary.items(), key=lambda item: item[1])}
+
+
+my_dict = {'Jessa': 3, 'Kelly': 1, 'Jon': 2, 'Kerry': 4, 'Joy': 1}
+print(sortByValue(my_dict))
+
+"""
+    Exercise 20: Check if All Values are Unique
+    Write a function that takes a dictionary and returns True if all values in the dictionary are unique, False otherwise.
+"""
+
+
+def checkIfUnique(dictionary):
+    if len(dictionary.values()) == len(set(dictionary.values())):
+        return True
+    else:
+        return False
+
+
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'x': 10, 'y': 20, 'z': 10}
+dict3 = {}
+print(checkIfUnique(dict1))
+print(checkIfUnique(dict2))
+print(checkIfUnique(dict3))
