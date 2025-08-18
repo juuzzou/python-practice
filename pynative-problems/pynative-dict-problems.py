@@ -58,3 +58,17 @@ def toDict(keys, values):
 keys = ['Ten', 'Twenty', 'Thirty']
 values = [10, 20, 30]
 print(toDict(keys, values))
+
+"""
+    Exercise 4: Clear Dictionary
+    Clear all key-value pairs from a given dictionary and print it.
+"""
+
+
+def clearDict(dictionary):
+    dictionary.clear()
+    return dictionary
+
+
+my_dict = {'name': 'Alice', 'age': 35, 'city': 'New York'}
+print(clearDict(my_dict))
