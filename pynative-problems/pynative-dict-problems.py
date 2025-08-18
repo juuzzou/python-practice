@@ -40,3 +40,21 @@ def ifExists(dictionary, key):
 my_dict = {'name': 'Alice', 'age': 35, 'city': 'New York', 'profession': 'Doctor'}
 anotherDictionaryFunction(my_dict)
 print(ifExists(my_dict, key='age'))
+
+"""
+    Exercise 3: Dictionary from Lists
+    Write a Python program to convert two Python lists into a dictionary where elements from the first list become keys 
+    and elements from the second list become values.
+"""
+
+
+def toDict(keys, values):
+    dictionary = {}
+    for key, value in zip(keys, values):
+        dictionary.update({key: value})
+    return dictionary
+
+
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+print(toDict(keys, values))
