@@ -186,9 +186,9 @@ print(initializeWithDefaultValues(employees, defaults))
 """
 
 
-def iDontKnow(listOf, dictOf):
-    for item in listOf:
-        print(f'{item.capitalize()}: {dictOf.get(item)}')
+def iDontKnow(list, dictionary):
+    for item in list:
+        print(f'{item.capitalize()}: {dictionary.get(item)}')
 
 
 sample_dict = {
@@ -199,3 +199,26 @@ sample_dict = {
 
 keys = ["name", "salary"]
 iDontKnow(keys, sample_dict)
+
+"""
+    Exercise 12: Delete a list of keys from a dictionary
+"""
+
+
+def iReallyDontKnow(list, dictionary):
+    for item in list:
+        dictionary.pop(item)
+    return dictionary
+
+
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"
+}
+
+keys = ["name", "salary"]
+print(iReallyDontKnow(keys, sample_dict))
+
+
