@@ -72,3 +72,18 @@ def clearDict(dictionary):
 
 my_dict = {'name': 'Alice', 'age': 35, 'city': 'New York'}
 print(clearDict(my_dict))
+
+"""
+    Exercise 5: Merge two Python dictionaries into one 
+    Write a code to merge two dictionaries into a new dictionary and print it.   
+"""
+
+
+def mergeDicts(first_dictionary, second_dictionary):
+    first_dictionary.update(second_dictionary)
+    return first_dictionary
+
+
+dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
+print(mergeDicts(dict1, dict2))
