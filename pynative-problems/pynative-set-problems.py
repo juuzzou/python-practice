@@ -169,3 +169,18 @@ def hasIntersection(set_1, set_2):
 set1 = {10, 20, 30, 40, 50}
 set2 = {60, 70, 80, 90, 10}
 hasIntersection(set1, set2)
+
+"""
+    Exercise 12: Set Symmetric Difference Update
+    Write a program to update set1 by adding items from set2 that are not common to both sets.
+"""
+
+
+def symmetricDiffUpdate(set_1, set_2):
+    set_1.symmetric_difference_update(set_2)
+    return set_1
+
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+print(symmetricDiffUpdate(set1, set2))
