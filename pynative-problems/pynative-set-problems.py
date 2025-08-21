@@ -184,3 +184,18 @@ def symmetricDiffUpdate(set_1, set_2):
 set1 = {10, 20, 30, 40, 50}
 set2 = {30, 40, 50, 60, 70}
 print(symmetricDiffUpdate(set1, set2))
+
+"""
+    Exercise 13: Set Intersection Update
+    Write a code to remove items from set1 that are not present in set2.
+"""
+
+
+def updateIntersection(set_1, set_2):
+    set_1.intersection_update(set_2)
+    return set_1
+
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+print(updateIntersection(set1, set2))
