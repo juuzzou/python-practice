@@ -93,3 +93,17 @@ def addListToSet(a_list, a_set):
 sample_set = {"Yellow", "Orange", "Black"}
 sample_list = ["Blue", "Green", "Red"]
 print(addListToSet(sample_list, sample_set))
+
+"""
+    Exercise 7: Set Difference Update
+    Given two Python sets, write a program to update the first set with only the items that are unique to it (i.e., not present in the second set).
+"""
+
+
+def updateDifferenceSet(set_1, set_2):
+    set_1.difference_update(set_2)
+    return set_1
+
+set1 = {10, 20, 30}
+set2 = {20, 40, 50}
+print(updateDifferenceSet(set1, set2))
