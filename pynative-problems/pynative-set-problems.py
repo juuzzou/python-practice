@@ -199,3 +199,19 @@ def updateIntersection(set_1, set_2):
 set1 = {10, 20, 30, 40, 50}
 set2 = {30, 40, 50, 60, 70}
 print(updateIntersection(set1, set2))
+
+"""
+    Exercise 14: Find Common Elements in Two Lists
+    list1 = [10, 20, 30, 40] and list2 = [30, 40, 50, 60], find the common elements using sets.
+"""
+
+
+def findCommonElements(list_1, list_2):
+    set_1 = set(list_1)
+    set_2 = set(list_2)
+    return set_1 & set_2
+
+
+list1 = [10, 20, 30, 40]
+list2 = [30, 40, 50, 60]
+print(findCommonElements(list1, list2))
