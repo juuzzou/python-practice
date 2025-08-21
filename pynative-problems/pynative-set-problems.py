@@ -152,3 +152,20 @@ set1 = {10, 20}
 set2 = {10, 20, 30, 40}
 print(isSubset(set1, set2))
 
+"""
+    Exercise 11: Set Intersection Check
+    Write a code to check if two sets have any elements in common. If yes, display the common elements
+"""
+
+
+def hasIntersection(set_1, set_2):
+    if set_1.isdisjoint(set_2):
+        return print('No items in common')
+    else:
+        print('Two sets have items in common')
+        return print(set_1 & set_2)
+
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {60, 70, 80, 90, 10}
+hasIntersection(set1, set2)
