@@ -115,11 +115,25 @@ print(updateDifferenceSet(set1, set2))
 """
 
 
-def updateDifferenceSet(set):
+def removeItem(set):
     remove_set = {10, 20, 30}
     set.difference_update(remove_set)
     return set
 
 
 set1 = {10, 20, 30, 40, 50}
-print(updateDifferenceSet(set1))
+print(removeItem(set1))
+
+"""
+    Exercise 9: Check Subset
+    Check if set1 is a subset of set2. Write a code to return True if every element in the subset_set is also present in the main_set.
+"""
+
+
+def isSubset(set_1, set_2):
+    return set_1.issubset(set_2)
+
+
+subset_set = {10, 20}
+main_set = {10, 20, 30, 40}
+print(isSubset(subset_set, main_set))
