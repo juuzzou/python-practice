@@ -104,6 +104,22 @@ def updateDifferenceSet(set_1, set_2):
     set_1.difference_update(set_2)
     return set_1
 
+
 set1 = {10, 20, 30}
 set2 = {20, 40, 50}
 print(updateDifferenceSet(set1, set2))
+
+"""
+    Exercise 8: Remove Items From Set Simultaneously
+    Write a Python program to remove items 10, 20, 30 from the following set at once.
+"""
+
+
+def updateDifferenceSet(set):
+    remove_set = {10, 20, 30}
+    set.difference_update(remove_set)
+    return set
+
+
+set1 = {10, 20, 30, 40, 50}
+print(updateDifferenceSet(set1))
