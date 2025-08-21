@@ -47,3 +47,17 @@ def intersectionSet(set_1, set_2):
 set1 = {10, 20, 30, 40, 50}
 set2 = {30, 40, 50, 60, 70}
 print(intersectionSet(set1, set2))
+
+"""
+    Exercise 4: Difference of Sets
+    Find the difference (set1 - set2). Write a code to returns a new set containing elements that are present in set1 but not in set2.
+"""
+
+
+def differenceSet(set_1, set_2):
+    return set_1 - set_2
+
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+print(differenceSet(set1, set2))
