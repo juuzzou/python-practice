@@ -77,3 +77,19 @@ def symmetricDifferenceSet(set_1, set_2):
 set1 = {10, 20, 30, 40, 50}
 set2 = {30, 40, 50, 60, 70}
 print(symmetricDifferenceSet(set1, set2))
+
+"""
+    Exercise 6: Add a list of Elements to a Set
+    Given a Python list, write a program to add all of its elements into a given set.
+"""
+
+
+def addListToSet(a_list, a_set):
+    for item in a_list:
+        a_set.add(item)
+    return a_set
+
+
+sample_set = {"Yellow", "Orange", "Black"}
+sample_list = ["Blue", "Green", "Red"]
+print(addListToSet(sample_list, sample_set))
