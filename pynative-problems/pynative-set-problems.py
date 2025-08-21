@@ -137,3 +137,18 @@ def isSubset(set_1, set_2):
 subset_set = {10, 20}
 main_set = {10, 20, 30, 40}
 print(isSubset(subset_set, main_set))
+
+"""
+    Exercise 10: Check Superset
+    Check if main_set = {10, 20, 30, 40} is a superset of subset_set = {10, 20}.
+"""
+
+
+def isSuperset(set_1, set_2):
+    return set_1.issuperset(set_2)
+
+
+set1 = {10, 20}
+set2 = {10, 20, 30, 40}
+print(isSubset(set1, set2))
+
