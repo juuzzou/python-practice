@@ -13,3 +13,17 @@ def basicOperations():
 
 
 basicOperations()
+
+"""
+    Exercise 2: Tuple Repetition
+    Repeat a below tuple three times.
+"""
+
+
+def repetition():
+    original_tuple = ('a', 'b')
+    return original_tuple * 3
+
+
+print(repetition())
+
