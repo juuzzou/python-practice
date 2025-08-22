@@ -51,3 +51,16 @@ def reverseTuple(tuple):
 
 tuple1 = (10, 20, 30, 40, 50)
 print(reverseTuple(tuple1))
+
+"""
+    Exercise 5: Access Nested Tuples
+    Write a code to access and print value 20 from given nested tuple.
+"""
+
+
+def accessNesterTuple(tuple):
+    return tuple[1][1]
+
+
+tuple1 = ("Orange", [10, 20, 30], (5, 15, 25))
+print(accessNesterTuple(tuple1))
