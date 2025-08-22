@@ -229,3 +229,18 @@ def createFrozenSet(list):
 
 my_list = [10, 20, 30]
 print(createFrozenSet(my_list))
+
+"""
+    Exercise 16: Count Unique Words
+    Write a code to count the number of unique words in the given a sentence.
+"""
+
+
+def countUniqueWords(string):
+    _list = string.split(' ')
+    _set = set(_list)
+    return len(_set)
+
+
+sentence = "dog is a simple animal dogs is selfless animal"
+print(countUniqueWords(sentence))
