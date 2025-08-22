@@ -215,3 +215,17 @@ def findCommonElements(list_1, list_2):
 list1 = [10, 20, 30, 40]
 list2 = [30, 40, 50, 60]
 print(findCommonElements(list1, list2))
+
+"""
+    Exercise 15: Frozen Set
+    Create a frozen set from a list.
+"""
+
+
+def createFrozenSet(list):
+    frozen_set = frozenset(list)
+    return frozen_set
+
+
+my_list = [10, 20, 30]
+print(createFrozenSet(my_list))
