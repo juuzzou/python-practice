@@ -39,3 +39,15 @@ def sliceTuple(tuple):
 
 numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 print(sliceTuple(numbers))
+
+"""
+    Exercise 4: Reverse the tuple
+"""
+
+
+def reverseTuple(tuple):
+    return tuple[::-1]
+
+
+tuple1 = (10, 20, 30, 40, 50)
+print(reverseTuple(tuple1))
