@@ -167,3 +167,18 @@ def compareTuples(tuple_1, tuple_2):
 t1 = (1, 2, 3)
 t2 = (1, 2, 4)
 compareTuples(t1, t2)
+
+"""
+    Exercise 13: Removing Duplicates from Tuple
+    Write a code to create a new tuple with only unique elements.
+"""
+
+
+def removeDuplicates(tuple):
+    temp_set = set(tuple)
+    return_tuple = (temp_set)
+    return return_tuple
+
+
+my_tuple = (1, 2, 2, 3, 4, 4, 5)
+print(removeDuplicates(my_tuple))
