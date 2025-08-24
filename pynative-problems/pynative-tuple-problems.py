@@ -147,3 +147,23 @@ def getMinMax(list):
 
 my_numbers = [10, 5, 20, 2, 15]
 print(getMinMax(my_numbers))
+
+"""
+    Exercise 12: Comparing Tuples
+    Compare two tuples and find out which one is “greater” and why?
+"""
+
+
+def compareTuples(tuple_1, tuple_2):
+    temp_list_1 = list(tuple_1)
+    temp_list_2 = list(tuple_2)
+    temp_sum_1, temp_sum_2 = sum(temp_list_1), sum(temp_list_2)
+    if temp_sum_1 > temp_sum_2:
+        print(f'{tuple_1} is greater than {tuple_2}')
+    else:
+        print(f'{tuple_2} is greater than {tuple_1}')
+
+
+t1 = (1, 2, 3)
+t2 = (1, 2, 4)
+compareTuples(t1, t2)
