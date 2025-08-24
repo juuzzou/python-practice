@@ -253,3 +253,19 @@ def countElement(input_tuple, element):
 
 tuple1 = (50, 10, 60, 70, 50)
 print(countElement(tuple1, 50))
+
+"""
+    Exercise 19: Check if all items in the tuple are the same
+"""
+
+
+def checkIfAllTheSame(input_tuple):
+    test = set(input_tuple)
+    if len(test) == 1:
+        return True
+    else:
+        return False
+
+
+tuple1 = (45, 45, 45, 45)
+print(checkIfAllTheSame(tuple1))
