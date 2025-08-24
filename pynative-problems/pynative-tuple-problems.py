@@ -200,7 +200,6 @@ def filterTuples(input_tuple):
 students = [('Alice', 85), ('Bob', 92), ('Charlie', 78)]
 print(filterTuples(students))
 
-
 """
     Exercise 15: Map Tuples
     Given a tuple of numbers, create a new tuple where each number is squared.
@@ -208,7 +207,22 @@ print(filterTuples(students))
 
 
 def mapTuples(input_tuple):
-    return tuple(item**2 for item in input_tuple)
+    return tuple(item ** 2 for item in input_tuple)
+
 
 t = (1, 2, 3, 4)
 print(mapTuples(t))
+
+"""
+    Exercise 16: Modify Tuple
+    Given is a nested tuple. Write a program to modify the first item (22) of a list inside a following tuple to 222
+"""
+
+
+def modifyTuple(input_tuple):
+    input_tuple[1][0] = 222
+    return input_tuple
+
+
+tuple1 = (11, [22, 33], 44, 55)
+print(modifyTuple(tuple1))
