@@ -226,3 +226,17 @@ def modifyTuple(input_tuple):
 
 tuple1 = (11, [22, 33], 44, 55)
 print(modifyTuple(tuple1))
+
+"""
+Exercise 17: Sort a tuple of tuples by 2nd item
+"""
+
+
+def sortTuple(input_tuple):
+    new_list = list(input_tuple)
+    sorted_list = sorted(new_list, key=lambda item: item[1])
+    return sorted_list
+
+
+tuple1 = (('a', 23), ('b', 37), ('c', 11), ('d', 29))
+print(sortTuple(reverseTuple(tuple1)))
