@@ -90,3 +90,17 @@ def unpackTuple(tuple_input):
 
 tuple1 = (10, 20, 30, 40)
 print(*unpackTuple(tuple1))
+
+"""
+    Exercise 8: Swap two tuples in Python
+"""
+
+
+def swapTuples(tuple_1, tuple_2):
+    tuple_1, tuple_2 = tuple_2, tuple_1
+    return tuple_1, tuple_2
+
+
+tuple1 = (11, 22)
+tuple2 = (99, 88)
+print(swapTuples(tuple1, tuple2))
