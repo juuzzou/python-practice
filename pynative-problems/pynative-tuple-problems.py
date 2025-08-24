@@ -77,3 +77,16 @@ def createATuple():
 
 print(createATuple())
 
+"""
+    Exercise 7: Unpack the tuple into 4 variables
+    Write a code to unpack the following tuple into four variables and display each variable.
+"""
+
+
+def unpackTuple(tuple_input):
+    a, b, c, d = tuple_input
+    return a, b, c, d
+
+
+tuple1 = (10, 20, 30, 40)
+print(*unpackTuple(tuple1))
