@@ -182,3 +182,20 @@ def removeDuplicates(tuple):
 
 my_tuple = (1, 2, 2, 3, 4, 4, 5)
 print(removeDuplicates(my_tuple))
+
+"""
+    Exercise 14: Filter Tuples
+    Write a code to filter out students with scores less than 90 from a given a list of tuples.
+"""
+
+
+def filterTuples(input_tuple):
+    new_array = []
+    for item in input_tuple:
+        if item[1] >= 90:
+            new_array.append(item)
+    return new_array
+
+
+students = [('Alice', 85), ('Bob', 92), ('Charlie', 78)]
+print(filterTuples(students))
