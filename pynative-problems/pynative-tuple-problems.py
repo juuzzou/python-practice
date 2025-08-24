@@ -240,3 +240,16 @@ def sortTuple(input_tuple):
 
 tuple1 = (('a', 23), ('b', 37), ('c', 11), ('d', 29))
 print(sortTuple(reverseTuple(tuple1)))
+
+"""
+    Exercise 18: Count Elements
+    Write a code to counts the number of occurrences of item 50 from a tuple.
+"""
+
+
+def countElement(input_tuple, element):
+    return input_tuple.count(element)
+
+
+tuple1 = (50, 10, 60, 70, 50)
+print(countElement(tuple1, 50))
