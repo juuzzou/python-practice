@@ -132,3 +132,18 @@ def convertToTuple(list_input):
 
 my_list = [10, 20, 30]
 print(convertToTuple(my_list))
+
+"""
+    Exercise 11: Function Returning Tuple
+    Write a function get_min_max(numbers) that takes a list of numbers and returns a tuple containing the minimum and maximum number.
+"""
+
+
+def getMinMax(list):
+    list_min = min(list)
+    list_max = max(list)
+    return list_min, list_max
+
+
+my_numbers = [10, 5, 20, 2, 15]
+print(getMinMax(my_numbers))
