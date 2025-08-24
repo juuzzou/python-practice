@@ -104,3 +104,17 @@ def swapTuples(tuple_1, tuple_2):
 tuple1 = (11, 22)
 tuple2 = (99, 88)
 print(swapTuples(tuple1, tuple2))
+
+"""
+    Exercise 9: Copy Specific Elements From Tuple
+    Write a program to copy elements 44 and 55 from the following tuple into a new tuple.
+"""
+
+
+def copySpecificElement(tuple_input):
+    tuple_output = tuple_input[3:5]
+    return tuple_output
+
+
+tuple1 = (11, 22, 33, 44, 55, 66)
+print(copySpecificElement(tuple1))
