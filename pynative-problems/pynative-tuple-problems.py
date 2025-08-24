@@ -118,3 +118,17 @@ def copySpecificElement(tuple_input):
 
 tuple1 = (11, 22, 33, 44, 55, 66)
 print(copySpecificElement(tuple1))
+
+"""
+    Exercise 10: List to Tuple
+    Convert a list my_list = [10, 20, 30] into a tuple.
+"""
+
+
+def convertToTuple(list_input):
+    tuple_output = tuple(list_input)
+    return tuple_output
+
+
+my_list = [10, 20, 30]
+print(convertToTuple(my_list))
