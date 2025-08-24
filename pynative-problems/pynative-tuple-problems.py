@@ -64,3 +64,16 @@ def accessNesterTuple(tuple):
 
 tuple1 = ("Orange", [10, 20, 30], (5, 15, 25))
 print(accessNesterTuple(tuple1))
+
+"""
+    Exercise 6: Create a tuple with single item 50
+"""
+
+
+def createATuple():
+    tuple_output = (50,)
+    return tuple_output
+
+
+print(createATuple())
+
