@@ -199,3 +199,16 @@ def filterTuples(input_tuple):
 
 students = [('Alice', 85), ('Bob', 92), ('Charlie', 78)]
 print(filterTuples(students))
+
+
+"""
+    Exercise 15: Map Tuples
+    Given a tuple of numbers, create a new tuple where each number is squared.
+"""
+
+
+def mapTuples(input_tuple):
+    return tuple(item**2 for item in input_tuple)
+
+t = (1, 2, 3, 4)
+print(mapTuples(t))
