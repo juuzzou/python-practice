@@ -12,3 +12,11 @@ class Vehicle:
 
 new_car = Vehicle(160, 5000)
 print(f'My rented has maximum speed of {new_car.max_speed} mi/h and mileage of {new_car.mileage} mi.')
+
+"""
+    OOP Exercise 2: Create a Vehicle class without any variables and methods
+"""
+
+
+class AnotherVehicle:
+    pass
