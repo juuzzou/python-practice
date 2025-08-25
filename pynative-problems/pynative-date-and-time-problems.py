@@ -10,3 +10,7 @@ def currentTime():
 
 
 print(currentTime())
+
+"""
+I AIN'T DOING ALL THAT. FUCK THAT DATETIME BS
+"""
