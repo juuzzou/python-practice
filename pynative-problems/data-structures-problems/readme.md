@@ -1,0 +1,5 @@
+* [Data Structures](https://pynative.com/python-data-structure-exercise-for-beginners/)
+* [Lists](https://pynative.com/python-list-exercise-with-solutions/)
+* [Dictionaries](https://pynative.com/python-dictionary-exercise-with-solutions/)
+* [Sets](https://pynative.com/python-set-exercise-with-solutions/)
+* [Tuples](https://pynative.com/python-tuple-exercise-with-solutions/)
